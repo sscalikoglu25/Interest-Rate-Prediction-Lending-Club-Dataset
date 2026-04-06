@@ -40,8 +40,6 @@ The following supervised learning models from scikit-learn were trained and comp
 
 * Regression Tree
 * Random Forest
-* Support Vector Machine (SVM)
-* Neural Network (MLP Regressor)
 
 ### Model Evaluation
 
@@ -66,7 +64,7 @@ Models were evaluated using:
 To interpret model predictions and provide transparency:
 
 * **Feature Importance (Random Forest):** Identified the most influential variables driving interest rate predictions
-* **SHAP (SHapley Additive exPlanations):** Quantified the contribution of individual features to model predictions at both global and local levels
+* **Partial Dependence Plots:** Marginal effect of individual features to model predictions holding everything else constant
 
 ### Key Insights
 
@@ -82,20 +80,7 @@ To interpret model predictions and provide transparency:
 * pandas, numpy
 * scikit-learn
 * matplotlib, seaborn
-* SHAP
-
----
-
-## Repository Structure
-
-```
-lendingclub-interest-rate-prediction/
-│── data/              # Dataset (if permitted)
-│── notebooks/         # Jupyter notebooks
-│── src/               # Python scripts (optional)
-│── visuals/           # Charts and plots
-│── README.md
-```
+  
 
 ---
 
@@ -110,6 +95,6 @@ This project demonstrates how machine learning can be applied to model loan pric
 * Hyperparameter tuning for improved model performance
 * Testing additional models (e.g., gradient boosting)
 * Incorporating external macroeconomic variables
-* Expanding explainability with partial dependence plots
+* Expanding explainability with SHAP (SHapley Additive exPlanations)
 
 ---
